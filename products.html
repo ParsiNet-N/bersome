@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محصولات | برسومه</title>
+    <style>
+        /* All the base CSS is copied for consistency */
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Vazirmatn:wght@300;400;700&display=swap');
+        :root { --primary-color: #121212; --header-footer-color: #000000; --accent-color: #d4af37; --text-color-light: #e0e0e0; --text-color-dim: #a0a0a0; --border-color: rgba(212, 175, 55, 0.2); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Vazirmatn', sans-serif; background-color: var(--primary-color); color: var(--text-color-light); line-height: 1.8; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3 { font-family: 'Amiri', serif; font-weight: 700; color: var(--accent-color); }
+        .main-header { background-color: var(--header-footer-color); padding: 10px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color); }
+        .main-header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo-img { height: 60px; }
+        .main-nav ul { list-style: none; display: flex; }
+        .main-nav ul li { margin-right: 35px; }
+        .main-nav ul li a { text-decoration: none; color: var(--text-color-light); font-weight: 400; transition: color 0.3s ease; font-size: 1rem; }
+        .main-nav ul li a:hover { color: var(--accent-color); }
+        .main-footer { background-color: var(--header-footer-color); color: var(--text-color-dim); padding: 40px 0; text-align: center; border-top: 1px solid var(--border-color); }
+        .footer-content .address { margin-bottom: 20px; font-size: 1rem; line-height: 1.8; color: var(--text-color-light); }
+        .social-links { margin-bottom: 20px; }
+        .social-links a { color: var(--text-color-light); margin: 0 15px; text-decoration: none; font-size: 1.5rem; transition: color 0.3s ease; }
+        .social-links a:hover { color: var(--accent-color); }
+        .copyright { font-size: 0.9rem; }
+        
+        /* --- STYLES for Product Grid --- */
+        .page-title { text-align: center; font-size: 3.5rem; padding: 60px 0; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding-bottom: 80px; }
+        .product-item { text-align: center; border: 1px solid var(--border-color); padding: 15px; border-radius: 5px; display: flex; flex-direction: column; }
+        .product-item img { width: 100%; height: 400px; object-fit: cover; border-radius: 5px; margin-bottom: 15px; }
+        .product-item h3 { font-size: 1.5rem; color: var(--text-color-light); margin-bottom: auto; padding-bottom: 15px;}
+        .product-item .info-button { display: inline-block; text-decoration: none; color: var(--accent-color); border: 1px solid var(--accent-color); padding: 8px 25px; border-radius: 5px; transition: all 0.3s ease; margin-top: 15px; }
+        .product-item .info-button:hover { background-color: var(--accent-color); color: var(--primary-color); }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo-link"><img src="logo.png" alt="Bersomeh Logo" class="logo-img"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1 class="page-title">محصولات ما</h1>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="product-1.jpg" alt="کت و شلوار ژاکارد">
+                <h3>کت و شلوار ژاکارد</h3>
+                <a href="single-product.html" class="info-button">اطلاعات بیشتر</a>
+            </div>
+            <div class="product-item">
+                <img src="product-2.jpg" alt="پالتو اور کت">
+                <h3>پالتو اور کت</h3>
+                <a href="single-product-2.html" class="info-button">اطلاعات بیشتر</a>
+            </div>
+            <div class="product-item">
+                <img src="product-3.jpg" alt="کت مخمل سوزن دوزی">
+                <h3>کت مخمل سوزن دوزی</h3>
+                <a href="single-product-3.html" class="info-button">اطلاعات بیشتر</a>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container footer-content">
+             <div class="address"><p>📍 خراسان جنوبی، بیرجند، خیابان پانزده خرداد</p></div>
+            <div class="social-links"><a href="#" title="Instagram">اینستاگرام</a><a href="#" title="Telegram">تلگرام</a></div>
+            <p class="copyright">تمامی حقوق برای نیکان محفوظ است.</p>
+        </div>
+    </footer>
+</body>
+</html>

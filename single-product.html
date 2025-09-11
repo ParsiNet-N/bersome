@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کت و شلوار ژاکارد | برسومه</title>
+    <style>
+        /* All the base CSS is copied for consistency */
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Vazirmatn:wght@300;400;700&display=swap');
+        :root { --primary-color: #121212; --header-footer-color: #000000; --accent-color: #d4af37; --text-color-light: #e0e0e0; --text-color-dim: #a0a0a0; --border-color: rgba(212, 175, 55, 0.2); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Vazirmatn', sans-serif; background-color: var(--primary-color); color: var(--text-color-light); line-height: 1.8; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3 { font-family: 'Amiri', serif; font-weight: 700; color: var(--accent-color); }
+        .main-header { background-color: var(--header-footer-color); padding: 10px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color); }
+        .main-header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo-img { height: 60px; }
+        .main-nav ul { list-style: none; display: flex; }
+        .main-nav ul li { margin-right: 35px; }
+        .main-nav ul li a { text-decoration: none; color: var(--text-color-light); font-weight: 400; transition: color 0.3s ease; font-size: 1rem; }
+        .main-nav ul li a:hover { color: var(--accent-color); }
+        .main-footer { background-color: var(--header-footer-color); color: var(--text-color-dim); padding: 40px 0; text-align: center; border-top: 1px solid var(--border-color); }
+        .footer-content .address { margin-bottom: 20px; font-size: 1rem; line-height: 1.8; color: var(--text-color-light); }
+        .social-links { margin-bottom: 20px; }
+        .social-links a { color: var(--text-color-light); margin: 0 15px; text-decoration: none; font-size: 1.5rem; transition: color 0.3s ease; }
+        .social-links a:hover { color: var(--accent-color); }
+        .copyright { font-size: 0.9rem; }
+
+        /* --- STYLES for Single Product --- */
+        .product-section { padding: 80px 0; display: flex; align-items: center; gap: 50px; }
+        .product-image { flex: 1; }
+        .product-image img { width: 100%; border-radius: 5px; }
+        .product-details { flex: 1; }
+        .product-details h1 { font-size: 3rem; margin-bottom: 20px; }
+        .product-caption { font-size: 1.1rem; color: var(--text-color-dim); line-height: 2; margin-bottom: 30px; }
+        .product-caption p { margin-bottom: 15px; }
+        .product-caption .philosophy { margin-top: 20px; font-style: italic; color: var(--text-color-light); }
+        .cta-button { display: inline-block; background-color: var(--accent-color); color: var(--primary-color); padding: 12px 30px; text-decoration: none; font-weight: 700; border-radius: 5px; transition: all 0.3s ease; }
+        .cta-button:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo-link"><img src="logo.png" alt="Bersomeh Logo" class="logo-img"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="product-section">
+            <div class="product-image">
+                <img src="product-1.jpg" alt="کت و شلوار ژاکارد">
+            </div>
+            <div class="product-details">
+                <h1>کت و شلوار ژاکارد</h1>
+                <div class="product-caption">
+                    <p>
+                        جنس کت و شلوار: ترکیب کرپ کالیفرنیا، کرپ اندونزی و مخمل ژاکارد.<br>
+                        در سه رنگ طوسی، مشکی و کرم.<br>
+                        قد کت ۸۰ و قابل سفارش در سایزهای مختلف.
+                    </p>
+                    <p>
+                        ارسال به سراسر کشور (ارسال داخل بیرجند رایگان).<br>
+                        برای ثبت سفارش دایرکت پیام دهید.
+                    </p>
+                    <p class="philosophy">
+                        "لباسهای ما چیزی فراتر از پارچه و نخ هستند؛ آن ها بازتابی از سبک منحصر به فرد شما هستند، طراحی شدن تا به شما جسارت و خاص بودن را هدیه کنند."
+                    </p>
+                </div>
+                <a href="https://instagram.com" class="cta-button">ثبت سفارش در اینستاگرام</a>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="address"><p>📍 خراسان جنوبی، بیرجند، خیابان پانزده خرداد</p></div>
+            <div class="social-links"><a href="#" title="Instagram">اینستاگرام</a><a href="#" title="Telegram">تلگرام</a></div>
+            <p class="copyright">تمامی حقوق برای نیکان محفوظ است.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bersomeh | مزون برسومه</title>
+    <style>
+        /* All the CSS code is the same as the previous "dark theme" version */
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Vazirmatn:wght@300;400;700&display=swap');
+        :root { --primary-color: #121212; --header-footer-color: #000000; --accent-color: #d4af37; --text-color-light: #e0e0e0; --text-color-dim: #a0a0a0; --border-color: rgba(212, 175, 55, 0.2); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Vazirmatn', sans-serif; background-color: var(--primary-color); color: var(--text-color-light); line-height: 1.8; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3 { font-family: 'Amiri', serif; font-weight: 700; color: var(--accent-color); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .main-header { background-color: var(--header-footer-color); padding: 10px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color); }
+        .main-header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo-img { height: 60px; }
+        .main-nav ul { list-style: none; display: flex; }
+        .main-nav ul li { margin-right: 35px; }
+        .main-nav ul li a { text-decoration: none; color: var(--text-color-light); font-weight: 400; transition: color 0.3s ease; font-size: 1rem; }
+        .main-nav ul li a:hover { color: var(--accent-color); }
+        .hero { height: 80vh; background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542842794-29562476CC25?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; text-align: center; }
+        .hero-content { animation: fadeIn 1.2s ease-out; }
+        .hero h1 { font-size: 4rem; margin-bottom: 15px; }
+        .hero p { font-size: 1.2rem; color: var(--text-color-light); }
+        .features-section { padding: 80px 0; border-top: 1px solid var(--border-color); }
+        .features-title { text-align: center; font-size: 3rem; margin-bottom: 50px; }
+        .features-grid { display: flex; justify-content: center; gap: 50px; text-align: center; }
+        .feature-item { max-width: 300px; }
+        .feature-item .icon { font-size: 3rem; color: var(--accent-color); margin-bottom: 15px; line-height: 1; }
+        .feature-item h3 { font-size: 1.8rem; margin-bottom: 10px; }
+        .feature-item p { color: var(--text-color-dim); }
+        .placeholder-section { padding: 80px 0; text-align: center; border-top: 1px solid var(--border-color); }
+        .placeholder-section h2 { font-size: 3rem; margin-bottom: 15px; }
+        .placeholder-section p { color: var(--text-color-dim); }
+        .main-footer { background-color: var(--header-footer-color); color: var(--text-color-dim); padding: 40px 0; text-align: center; border-top: 1px solid var(--border-color); }
+        .footer-content .address { margin-bottom: 20px; font-size: 1rem; line-height: 1.8; color: var(--text-color-light); }
+        .social-links { margin-bottom: 20px; }
+        .social-links a { color: var(--text-color-light); margin: 0 15px; text-decoration: none; font-size: 1.5rem; transition: color 0.3s ease; }
+        .social-links a:hover { color: var(--accent-color); }
+        .copyright { font-size: 0.9rem; }
+        @media (max-width: 768px) { .main-nav { display: none; } .hero h1 { font-size: 2.8rem; } .features-grid { flex-direction: column; align-items: center; } h2.features-title, .placeholder-section h2 { font-size: 2.5rem; } }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo-link"><img src="logo.png" alt="Bersome Logo" class="logo-img"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="products.html">محصولات</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bersome</h1>
+                <p>تجربه اصالت و زیبایی</p>
+            </div>
+        </section>
+        <section class="features-section fade-in-section">
+            <div class="container">
+                <h2 class="features-title">چرا برسومه؟</h2>
+                <div class="features-grid">
+                    <div class="feature-item"><div class="icon">★</div><h3>پارچه‌های خاص</h3><p>ما بهترین و خاص‌ترین پارچه‌ها را برای شما انتخاب می‌کنیم.</p></div>
+                    <div class="feature-item"><div class="icon">✂</div><h3>دوخت سفارشی</h3><p>هر لباس با دقت و ظرافت تمام، متناسب با سلیقه شما آماده می‌شود.</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="placeholder-section"><div class="container"><h2>گالری تصاویر</h2><p>به زودی جدیدترین مدل‌ها در این بخش قرار خواهد گرفت.</p></div></section>
+    </main>
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="address"><p>📍 خراسان جنوبی، بیرجند، خیابان پانزده خرداد</p></div>
+            <div class="social-links"><a href="#" title="Instagram">اینستاگرام</a><a href="#" title="Telegram">تلگرام</a></div>
+            <p class="copyright">تمامی حقوق برای نیکان محفوظ است.</p>
+        </div>
+    </footer>
+</body>
+</html>
